@@ -1,0 +1,28 @@
+#Analizando el gruyere
+
+Al entrar en la pagina puedes ver una pagina que parece haber sido crada hace años, algo que al principio a más de una persona 
+le haria sospechar.
+
+Se puede añadir html en el snippet este lo encontraremos en la parte superior izquierda. Esto puede llegar a ser peligroso o algo
+arriesgado dependiendo del tipo de persona que quiera hacer daño o el tipo de persona que entre en tu pagina.
+A parte no restringen el html que puedas meter.
+
+Cuando creas una cuenta puedes crear una cuenta teniendo todo en blanco, esto es malo para el usuario ya que cualquiera podria 
+entrar en la cuenta de este usuario. Ademas de que a la hora de cambiar contraseña esta no se cambia.
+
+Otro fallo que encontramos en la pagina es el upload ya que si subes un archivo lo cambias e lo vuelves a subir este archivo no 
+se cambia aunque en tu PC este cambiado o editado. Es decir si subes un archivo y no te gusta, lo editas e lo subes va a subir el
+archivo que subiste antes y no el que has editado simple y llana mente porque esta pagina al ver que has subido otra ves un 
+archivo con el mismo nombre en vez de borrar el antiguo y subir el nuevo, lo que hace es borrar el nuevo y seguir usando el viejo
+y para que se suba el nuevo tienes que editarle el nombre 
+
+Tambien puedes añadir que muestre tu usuario como hago en este enlace 
+"https://google-gruyere.appspot.com/390677204705164357369803266053710849609/Lex/cookies(mia).html"
+Para que haga esto he hecho lo siguiente: 
+
+-Primero he creado un archivo "html" 
+
+-Segundo, le añadido esto "<script> alert(document.alert)</script>" con esto ya al usuario le saldra 
+una alerta con su id al completo.
+
+
