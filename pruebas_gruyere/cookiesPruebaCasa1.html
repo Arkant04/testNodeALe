@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cookie = document.cookie;
+       const response = await fetch("https://localHost:3000/get", {
+        method: "GET",
+           
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log("Cookies son:", cookie)
+        })
+
+    </script>
+    
+</body>
+</html>
