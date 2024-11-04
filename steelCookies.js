@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const escapeHtml = require('escape-html');
 let texto = "";
 let cokkiesQueGuardo = "";
 //let cookies = document.cookie;
@@ -22,7 +23,7 @@ app.get('/grab', (req, res) => {
   
   app.get('/cookir', (req, res) => {
       let cookie = req.query.cookie
-      cokkiesQueGuardo = cookie
+      cokkiesQueGuardo = escapeHtml(cookie)
       console.log("Cookies que he virlado:" + cookie)
       res.send('Hola wuenas tardes, estas cookies estan almacenadas:' + cokkiesQueGuardo)
   
