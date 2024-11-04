@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/grab', (req, res) => {
-    const data = req.query.data
+    const data = escapeHtml(req.query.data)
     texto += " " + data
     res.send(data)
   })
