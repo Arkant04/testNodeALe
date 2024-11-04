@@ -1,5 +1,6 @@
 
 const express = require('express');
+const escape = require('escape-html');
 const app = express();
 let texto = "";
 
@@ -8,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/grab', (req, res) => {
-    const data = req.query.data
+    const data = escape(req.query.data)
     texto += " " + data
     res.send(data)
   })
